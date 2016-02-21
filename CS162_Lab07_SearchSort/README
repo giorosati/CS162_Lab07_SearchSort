@@ -1,0 +1,58 @@
+Giovanni Rosati
+OSU ID# 932510038
+rosatig@oregonstate.edu
+
+February 20, 2016
+Lab 7 README
+CS_162_400_W2016
+
+
+The program can be compiled by typing “make all” in the directory containing the uncompressed files from the rosatig.zip archive and an executable file named “prog” will be created in the same directory. 
+
+Make will look for and compile the following files:
+main.cpp
+
+When running prog will need the following files which are included in rosati.zip:
+ early.txt
+ middle.txt
+ end.txt
+ none.txt
+
+
+Type "make clean" to remove the prog file.
+
+
+Notes on testing:
+I compiled and ran the program on FLIP, testing all program paths:
+
+1) Search for an integer value. I used a linear search. 
+The program iterates through each of the supplied files: 
+   early.txt
+   middle.txt
+   end.txt
+   none.txt
+The number of occurances of the search value in each file 
+is displayed to the user.
+Binary search could not be used because the elements in the files
+being searched are not in ascending order.
+
+2) Sort a set of values. Program asks user for the name of the file 
+to be output, then asks for which of the supplied files to sort.
+I adapted the bubble sort algorithm from page 618 of the textbook. 
+
+3) Binary search for an integer value. 
+My binary search algorithm was adapted from page 601 of the textbook.
+The program asks the user for the value to search for.
+Then it iterates through each of the supplied files: 
+   early.txt
+   middle.txt
+   end.txt
+   none.txt
+ For each file:
+   a) Place the elements in a vector
+   b) Sort the vector elements in ascending order
+   c) Use a binary search to find the first orruccance of the search value.
+		- If the value is found program displays so and the position it was found at.
+		- If the value was not found programs displays a not found message.
+
+All functions worked as they were intended.
